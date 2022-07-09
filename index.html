@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey App</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header class="title-container">
+            <h1 id="title">Survey App</h1>
+            <p id="description">This is a small survey , Let me get to know more about you.</p>
+        </header>
+        <main>
+            <form id="survey-form">
+                
+                
+                    <label id="name-label">Name : 
+                        <input class="input-box" id="name" type="text" placeholder="Enter your name" required>
+                    </label>
+                    <label id="email-label">Email : 
+                        <input class="input-box" id="email" type="email" placeholder="Enter your email address" required>
+                    </label>
+                    <label id="number-label">Age : 
+                        <input class="input-box" id="number" type="number" placeholder="Enter your Age" min="13" max="99">
+
+                    </label>
+                    <label> What is your current occupation ?
+                        <select id="dropdown">
+                            <option>Choose an option</option>
+                            <option>Student</option>
+                            <option>Unemployed</option>
+                        </select>
+                    </label>
+                
+                    <!-- radiobox -->
+                    <p>Are you an Indian Citizen ? </p>
+                    <label class="input-radio"  for="indian">
+                    <input type="radio" id="indian" value="Indian" name="citizen">Yes</label>
+                    <label class="input-radio" for="non-resdiential"><input type="radio" id="non-resdiential" value="Non-residential" name="citizen">Non-Residential Indian</label>
+                    <label class-"input-radio" for="other"><input type="radio" id="other" value="Other" name="citizen">No</label>
+
+                    <!-- checkbox -->
+                    <p>What you will be doing during free time ?</p>
+                    <label class="input-checkbox" for="gaming"><input type="checkbox" id="gaming" value="Gaming" name="hobby"> 
+                    Gaming</label>
+                    <label class="input-checkbox"  for="gym"><input type="checkbox" id="gym" value="Gym" name="hobby"> 
+                    Gym</label>
+                    <label class="input-checkbox"   for="coding"><input type="checkbox" id="coding" value="Coding" name="hobby">
+                    Coding</label>
+                    <label class="input-checkbox"   for="netflix"><input type="checkbox" id="netflix" value="Netflix" name="hobby">
+                    Netflix</label>
+                    
+                    <!-- feedback -->
+                    <label>Tell us your coding journey from scratch 
+                    <textarea name="feedback" rows="3" cols="30" placeholder="Write your story here.."></textarea>
+                    </label>
+
+                    <!-- submit -->
+
+                    <input id="submit" type="submit" value="Submit"/>
+                
+            </form>
+        </main>
+        <footer>
+            <p>Made with 💗 by Baesil</p>
+        </footer>
+
+    </body>    
+</html>  
+
